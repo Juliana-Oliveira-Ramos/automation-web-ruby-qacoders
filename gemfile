@@ -1,0 +1,18 @@
+##conecta o nosso projeto com a pasta ruby.org
+source 'https://rubygems.org'
+
+##instalando as dependencias capybara,chrome driver,cucumber,rspec,selenium-webdriver,site_prism,pry
+gem 'capybara'
+
+gem 'chrome-driver-helper'
+
+gem 'cucumber'
+
+gem 'rspec'
+
+gem 'selenium-webdriver'
+
+gem 'site_prism'
+
+##pausa a automaçao no step desejado
+gem 'pry'
