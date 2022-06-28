@@ -9,8 +9,9 @@ require 'pry'
 
 
 #primeiro a variavel de ambiente
-ENVIRONMENT = ENV ['ENVIRONMENT']
-puts "ENVIRONMENT is runner in  #{ENVIRONMENT}"
+ENVIRONMENT = ENV['ENVIRONMENT']
+puts "ENVIRONMENT is runner >>> #{ENVIRONMENT}"
+
 
 #para saber qual url estou passando e se nao passar nada ele pega automaticamente o development
 CONFIG = YAML.load_file(File.dirname(__FILE__)+ "environments/#{ENVIRONMENT}.yml") #arquivo recebe o nome do diretorio

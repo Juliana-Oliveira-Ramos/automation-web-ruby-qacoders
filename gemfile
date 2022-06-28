@@ -1,25 +1,11 @@
-##conecta o nosso projeto com a pasta ruby.org
-source 'https://rubygems.org'
 
-##instalando as dependencias capybara,chrome driver,cucumber,rspec,selenium-webdriver,site_prism,pry
+source 'https://rubygems.org/'
+
 gem 'capybara'
-
 gem 'chromedriver-helper'
-
 gem 'cucumber'
-
 gem 'rspec'
-
 gem 'selenium-webdriver'
-
 gem 'site_prism'
-
-##pausa a automaçao no step desejado
 gem 'pry'
 
-#classe onde o le tudo que esta dentro do capybara e executa
-Capybara.configure do |config|
-config.default_driver = :selenium_chrome #driver usado=chrome
-config.app_host = "https://google.com.br" #entra no site
-config.default_max_wait_time = 10 #tempo de permanencia no site e de 10s
-end
