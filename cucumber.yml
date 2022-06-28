@@ -1,0 +1,17 @@
+#vamos esrever os parametros do projeto, pode ser inserido aui os ambientes em ue ele ira rodar,os nagadores que posso utlizar, posso configurar que tipo de report ele ira gerar se vai se html,xml, esse arquivo e um paremetro para suas açoes 
+#vamos construir um arquivo chamado default
+default: -p pretty --publish-quiet -p html -p development -p chrome #vai gerar um relatorio em html onde ira usar o chrome  com o ambiente development
+# o -p é para marcar qual comando estou usando 
+
+pretty: --format pretty #formata o arquivo
+development: ENVIRONMENT = development # a variavel development vai receber a variavel environment o development
+production: ENVIRONMENT = production # a variavel production vai receber a variavel environment a production
+
+#navegadores que ira usar
+chrome: BROWSER = chrome 
+firefox: BROWSER = firefox
+operagx: BROWSER = operagx
+chrome_headless: BROWSER = chrome_headless # headless = executa sem a necessidade de abrir o navegador 
+headless: BROWSER = headless
+
+html: --format html --out = reports/report.html #o relatorio html vai ser salvo na pasta reports/ o atacch anex o print nesse report  
