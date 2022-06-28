@@ -17,7 +17,7 @@ gem 'site_prism'
 ##pausa a automaçao no step desejado
 gem 'pry'
 
-#classeonde o le tudo que esta dentro do capybara
+#classe onde o le tudo que esta dentro do capybara e executa
 Capybara.configure do |config|
 config.default_driver = :selenium_chrome #driver usado=chrome
 config.app_host = "https://google.com.br" #entra no site
