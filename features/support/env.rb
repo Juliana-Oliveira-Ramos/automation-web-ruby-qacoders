@@ -6,6 +6,8 @@ require 'capybara/rspec'
 require 'selenium-webdriver'
 require 'site_prism'
 require 'pry'
+require_relative 'helper.rb'
+require_relative 'page_helper.rb'
 
 
 #primeiro a variavel de ambiente
@@ -15,6 +17,11 @@ puts "ENVIRONMENT is runner >>> #{ENVIRONMENT}"
 
 #para saber qual url estou passando e se nao passar nada ele pega automaticamente o development
 CONFIG = YAML.load_file(File.dirname(__FILE__)+ "environments/#{ENVIRONMENT}.yml") #arquivo recebe o nome do diretorio
+
+
+World(Helper) #tornou-se publica para o projeto o arquivo helper
+World(Pages) #tornou-se publico parqa o projeto o arquivo pages
+
 
 
 Capybara.configure do |config|
