@@ -2,8 +2,7 @@
 
 Before do |scenario| ##antes de executar o teste
 #antes de executar cada cenario voce vai limpar os cookies
-    Capybara.current_session.driver.manager.delete_all_cookies
-    page.driver.quit 
+    Capybara.current_session.driver.browser.manage.delete_cookie 
 end  
 
 After do |scenario| ## depois do teste excutado,ira gravar a evidencia em uma variavel e tirar print

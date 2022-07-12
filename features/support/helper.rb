@@ -1,8 +1,8 @@
 #nesse arquivo onde estarao localizados os prints dos testes
 module Helper
 def print_screen(file_name, result)##vem do metodo la do arquivo hooks.rb/ e quando acabar o teste ele chama esse metodo
-date = "#{Time.now.srtftime("%Y/%B/%D")}" #salva o arquivo com a data 
-hour = "#{Time.now.srtftime("%H-%M-%S")}"
+date = "#{Time.now.strftime("%Y/%B/%D")}" #salva o arquivo com a data 
+hour = "#{Time.now.strftime("%H-%M-%S")}"
 
 #diretorio onde ira salvar os prints 
 file_path = "reports/screenshots/tests_#{result}"
