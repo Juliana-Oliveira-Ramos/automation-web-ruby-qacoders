@@ -11,5 +11,5 @@ scenario_name = scenario.name.gsub(/\s+/, '_').tr('/', '_') # tira todos os espa
 if scenario.failed?
     print(scenario_name.downcase!,'Failed' )
 else
-    print_screen(scenario_name.downcase!,'Sucess')
+    print_screen(scenario_name.downcase!,'Success')
 end
